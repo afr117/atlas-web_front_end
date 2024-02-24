@@ -1,17 +1,11 @@
 /* CSS for custom font families */
 
-/* Define custom properties */
-:root {
-    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-/* Set body's font-family to font-family-base */
+/* Set body's font-family to Helvetica Neue, Helvetica, Arial, sans-serif */
 body {
-    font-family: var(--font-family-base);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* Target all heading levels and set font-family to font-family-title */
+/* Target all heading levels and set font-family to Helvetica Neue, Helvetica, Arial, sans-serif */
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
