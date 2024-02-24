@@ -1,0 +1,15 @@
+/* CSS for styling the container */
+
+/* Styles for .section-tagline */
+.section-tagline {
+    /* Your styles for .section-tagline */
+}
+
+/* Target the container class */
+.container {
+    /* Set width to 960px */
+    width: 960px;
+    /* Auto margin to evenly distribute margins on both sides */
+    margin-left: auto;
+    margin-right: auto;
+}
