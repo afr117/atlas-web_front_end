@@ -1,9 +1,9 @@
-/* CSS for Variables for the font-weight */
+/* CSS for Integrating Fonts */
 
-/* Targeting the root element, create custom font-weight properties */
+/* Targeting the root element, create custom font-family properties */
 :root {
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
+    --font-family-base: 'Open Sans', Arial, sans-serif;
+    --font-family-title: 'Raleway', Helvetica, sans-serif;
 }
 
 /* Set the font weight for the body to font-weight-regular */
