@@ -24,6 +24,8 @@
     padding: 0;
     /* Center align the text */
     text-align: center;
+    /* Remove list style */
+    list-style: none;
 }
 
 /* Targeting the nav-item class in nav class */
