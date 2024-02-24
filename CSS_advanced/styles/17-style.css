@@ -1,0 +1,37 @@
+/* CSS for adding padding to sections */
+
+/* Define custom properties */
+:root {
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+}
+
+/* Target the class section and set padding on all 4 sides */
+.section {
+    padding: var(--section-padding);
+}
+
+/* Set .section-header's padding on all 4 sides */
+.section-header {
+    padding: var(--section-header-padding);
+}
+
+/* Target the section-body class and set padding on all 4 sides */
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+/* Target the section-footer class and set padding on all 4 sides and horizontal alignment */
+.section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
+
+/* Target the class footer and set padding on all 4 sides */
+.footer {
+    padding: var(--footer-padding);
+}
