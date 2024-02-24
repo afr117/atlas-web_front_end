@@ -1,0 +1,32 @@
+/* CSS for styling and custom properties for the nav */
+
+/* Edit the nav-item-link-hover property */
+:root {
+    --nav-item-link-hover: var(--color-white);
+}
+
+/* Target before pseudo elements of nav-link inside nav */
+.nav nav-link::before {
+    /* Empty content */
+    content: '';
+    /* Absolute positioning */
+    position: absolute;
+    /* Set vertical position */
+    top: 0;
+    /* Set horizontal position */
+    left: 0;
+    /* Background color */
+    background-color: var(--color-white);
+    /* Width */
+    width: 0;
+    /* Height */
+    height: 20%;
+}
+
+/* Target before pseudo elements of nav-link when nav-item is hovered */
+.nav nav-item:hover::before {
+    /* Background color */
+    background-color: var(--color-primary);
+    /* Width */
+    width: 100%;
+}
