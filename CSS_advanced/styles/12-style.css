@@ -1,0 +1,21 @@
+/* CSS for additional styling to the section title */
+
+/* Define custom properties */
+:root {
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+}
+
+/* Target the section-title class */
+.section-title {
+    /* Set font family to font-family-title */
+    font-family: var(--font-family-title);
+    /* Set font size to font-size-xx-large */
+    font-size: var(--font-size-xx-large);
+    /* Set font weight to font-weight-bold */
+    font-weight: var(--font-weight-bold);
+    /* Use section-title-margin to set the margin */
+    margin: var(--section-title-margin);
+    /* Use section-title-color to set the text color */
+    color: var(--section-title-color);
+}
