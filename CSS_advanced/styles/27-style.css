@@ -1,0 +1,19 @@
+/* CSS for styling the section hero */
+
+/* Selector for section-hero */
+.section-hero {
+    /* Set background size using 2-value syntax */
+    background-size: 90rem auto; /* Width: 90rem, Height: auto */
+}
+
+/* Target section-title inside section-hero */
+.section-hero .section-title {
+    /* Add 5rem of margin to the bottom */
+    margin-bottom: 5rem;
+}
+
+/* Target section-inner inside section-hero */
+.section-hero .section-inner {
+    /* Add padding: 10rem 40rem 2rem 0 */
+    padding: 10rem 40rem 2rem 0; /* Top, Right, Bottom, Left */
+}
