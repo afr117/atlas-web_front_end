@@ -2,10 +2,12 @@
 
 /* Styling for sections with data-section-theme="dark" */
 section[data-section-theme="dark"] {
-    /* Redefine custom property text-color to color-white */
-    --text-color: var(--color-white);
-    /* Redefine custom property section-title-color to color-white */
-    --section-title-color: var(--color-white);
-    /* Set background to color-black */
-    background: var(--color-black);
+    /* Set background color to black */
+    background-color: var(--color-black);
+}
+
+/* Styling for text within sections with data-section-theme="dark" */
+section[data-section-theme="dark"] * {
+    /* Set text color to white */
+    color: var(--color-white);
 }
