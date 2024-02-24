@@ -1,0 +1,6 @@
+/* CSS for removing default text decoration from links */
+
+/* Remove text decoration from anchor elements */
+a {
+    text-decoration: none;
+}
