@@ -1,0 +1,57 @@
+/* CSS for grid styling and custom variables */
+
+/* Define custom properties */
+:root {
+    --section-tagline-margin: 0;
+}
+
+/* Styling for section-tagline class */
+.section-tagline {
+    /* Set margins */
+    margin: var(--section-tagline-margin);
+}
+
+/* Styling for ul elements with class row */
+ul.row {
+    /* Set margins and padding */
+    margin: 0;
+    padding: 0;
+    /* Remove default list styles */
+    list-style: none;
+}
+
+/* Styling for col-1-3 class */
+.col-1-3 {
+    /* Set width to 33.33% */
+    width: 33.33%;
+    /* Float left */
+    float: left;
+    /* Set padding */
+    padding: calc(0.5 * var(--root-font-size));
+}
+
+/* Styling for col-1-2 class */
+.col-1-2 {
+    /* Set width to 50% */
+    width: 50%;
+    /* Float left */
+    float: left;
+    /* Set padding */
+    padding: calc(0.5 * var(--root-font-size));
+}
+
+/* Styling for footer-copyright class */
+.footer-copyright {
+    /* Remove margins */
+    margin: 0;
+    /* Set font size */
+    font-size: var(--font-size-small);
+    /* Set foreground color */
+    color: var(--text-color);
+}
+
+/* Styling for ul elements within the footer class */
+.footer ul {
+    /* Align text to the right */
+    text-align: right;
+}
