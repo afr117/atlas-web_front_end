@@ -40,7 +40,7 @@
 }
 
 /* Targeting the nav-link class within nav class */
-.nav .nav-link {
+.nav .nav-item .nav-link {
     /* Set display to block */
     display: block;
     /* Set padding */
@@ -48,7 +48,7 @@
 }
 
 /* Hover effect for nav-link class within nav class */
-.nav .nav-link:hover {
+.nav .nav-item .nav-link:hover {
     /* Set foreground color value */
     color: var(--nav-item-link-hover);
 }
