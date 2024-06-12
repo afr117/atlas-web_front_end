@@ -1,0 +1,11 @@
+/* CSS for additional styles to the section tagline */
+
+/* Target the section-tagline class */
+.section-tagline {
+    /* Set font family to font-family-title */
+    font-family: var(--font-family-title);
+    /* Transform text to uppercase */
+    text-transform: uppercase;
+    /* Set font weight to font-weight-bold */
+    font-weight: bold;
+}

@@ -1,0 +1,28 @@
+/* Import Normalize.css */
+@import url('normalize.css');
+
+/* Your custom CSS styles go here */
+/* CSS for styling anchor elements with pseudo-classes */
+
+/* Target anchor elements with hyperlinks */
+a[href] {
+    /* Your styles for anchor elements containing hyperlinks */
+}
+
+/* Target the visited state for the link */
+a[href]:visited {
+    /* Italicize the text */
+    font-style: italic;
+}
+
+/* Target the hover state for the link */
+a[href]:hover {
+    /* Decorate the links with an underline when hovering */
+    text-decoration: underline;
+}
+
+/* Target the active state for the link */
+a[href]:active {
+    /* Set the color of the background with the variable color-light-grey */
+    background-color: var(--color-light-grey);
+}

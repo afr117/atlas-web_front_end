@@ -1,0 +1,23 @@
+/* CSS for Reuse and repeat with variables */
+
+/* Define custom properties */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black); /* Set text-color to color-black */
+}
+
+/* Revisit section-tagline and card-category declarations */
+.section-tagline,
+.card-category {
+    color: var(--color-primary); /* Reset color to color-primary */
+}
+
+/* Revisit body and anchor declarations */
+body,
+a {
+    color: var(--text-color); /* Reset color to text-color */
+}

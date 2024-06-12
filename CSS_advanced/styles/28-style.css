@@ -1,0 +1,35 @@
+/* CSS for fixing the header and menu navigation bar */
+
+/* Custom properties */
+:root {
+    --header-padding: 4rem 0 0;
+    --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-position: absolute;
+    --header-logo-link-top: -1rem;
+    --header-logo-link-left: 0;
+}
+
+/* Header class selector */
+.header {
+    /* Pad the header */
+    padding: var(--header-padding);
+}
+
+/* Header-logo class selector */
+.header-logo {
+    /* Position the header-logo */
+    position: var(--header-logo-position);
+}
+
+/* Link inside header-logo class */
+.header-logo a {
+    /* Render the display */
+    display: var(--header-logo-link-display);
+    /* Position the links */
+    position: var(--header-logo-link-position);
+    /* Set vertical position */
+    top: var(--header-logo-link-top);
+    /* Set horizontal position */
+    left: var(--header-logo-link-left);
+}

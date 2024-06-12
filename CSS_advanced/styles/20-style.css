@@ -1,0 +1,11 @@
+/* CSS to clear the context of the grid */
+
+/* Styling for the empty row */
+.row::after {
+    /* No content */
+    content: "";
+    /* Displayed as a table */
+    display: table;
+    /* Clear floating elements */
+    clear: both;
+}

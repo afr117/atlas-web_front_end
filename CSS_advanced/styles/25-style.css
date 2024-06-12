@@ -1,0 +1,51 @@
+/* CSS to add border to the button */
+
+/* Custom properties */
+:root {
+    --button-display: inline-block;
+    --button-padding: 1.5rem 3rem;
+    --button-border: 0.2rem solid var(--color-primary);
+    --button-color: var(--color-black);
+    --button-text-decoration: none;
+    --button-font-size: var(--font-size-large);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-hover-background: var(--color-primary);
+}
+
+/* Selector for anchor links in active state */
+.card-services a:active {
+    /* Styles for active state */
+}
+
+/* Button class selector */
+.button {
+    /* Set display to variable button-display */
+    display: var(--button-display);
+    /* Add padding all around with variable button-padding */
+    padding: var(--button-padding);
+    /* Style the border with variable button-border */
+    border: var(--button-border);
+    /* Set size of fonts to variable button-font-size */
+    font-size: var(--button-font-size);
+    /* Set foreground color to variable button-color */
+    color: var(--button-color);
+    /* Decorated text should have value of variable button-text-decoration */
+    text-decoration: var(--button-text-decoration);
+}
+
+/* Hover state for button class selector */
+.button:hover {
+    /* Set foreground color value to variable button-hover-color */
+    color: var(--button-hover-color);
+    /* Decorated text should have value of variable button-hover-text-decoration */
+    text-decoration: var(--button-hover-text-decoration);
+    /* Use value of variable button-hover-background for background */
+    background: var(--button-hover-background);
+}
+
+/* Dark theme settings */
+[data-section-theme="dark"] {
+    /* Create a custom property button-color pointing to variable color-white */
+    --button-color: var(--color-white);
+}

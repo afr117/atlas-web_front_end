@@ -1,0 +1,17 @@
+/* CSS for Integrating Fonts */
+
+/* Targeting the root element, create custom font-family properties */
+:root {
+    --font-family-base: 'Open Sans', Arial, sans-serif;
+    --font-family-title: 'Raleway', Helvetica, sans-serif;
+}
+
+/* Set the font weight for the body to font-weight-regular */
+body {
+    font-weight: var(--font-weight-regular);
+}
+
+/* Set the font weight for the headings to font-weight-bold */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+}

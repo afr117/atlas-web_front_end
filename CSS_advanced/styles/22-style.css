@@ -1,0 +1,13 @@
+/* CSS to add a dark theme to sections */
+
+/* Styling for sections with data-section-theme="dark" */
+section[data-section-theme="dark"] {
+    /* Set background color to black */
+    background-color: var(--color-black);
+}
+
+/* Styling for text within sections with data-section-theme="dark" */
+section[data-section-theme="dark"] * {
+    /* Set text color to white */
+    color: var(--color-white);
+}
