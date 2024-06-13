@@ -13,7 +13,7 @@
     --nav-item-font-size: var(--font-size-medium);
     --nav-item-letter-spacing: calc(4% * 1rem); /* 4% of the root element */
     --nav-item-display: inline-block;
-    --nav-item-margin: 3rem 0 0 0; /* 3 times the root element on the bottom and 0 elsewhere */
+    --nav-item-margin: calc(3rem * 1rem) 0 0 0; /* 3 times the root element on the bottom and 0 elsewhere */
     --nav-item-link-hover: var(--color-primary);
 }
 
@@ -69,7 +69,7 @@
 /* For the nav-link class in nav class */
 .nav-link {
     display: block; /* Set the display to block */
-    padding: 0.5rem 1rem; /* Set the padding to half of the root element for top and bottom, and equal to the root element for left and right */
+    padding: calc(0.5rem * 1rem) calc(1rem * 1rem); /* Set the padding to half of the root element for top and bottom, and equal to the root element for left and right */
 }
 
 /* While hovering over the nav-link class in nav class */
