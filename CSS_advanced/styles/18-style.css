@@ -2,12 +2,13 @@
 
 /* Define custom properties */
 :root {
+    --root-font-size: 1rem; /* Define root font size */
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
     --nav-item-letter-spacing: 4%;
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 0 calc(3 * 1rem) 0; /* Use 1rem as root font size */
+    --nav-item-margin: 0 0 calc(3 * var(--root-font-size)) 0;
     --nav-item-link-hover: var(--color-primary);
 }
 
@@ -44,7 +45,7 @@
     /* Set display to block */
     display: block;
     /* Set padding */
-    padding: calc(0.5 * 1rem) 1rem; /* Use 1rem as root font size */
+    padding: calc(0.5 * var(--root-font-size)) var(--root-font-size);
 }
 
 /* Hover effect for nav-link class within nav class */
