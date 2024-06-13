@@ -1,16 +1,28 @@
-/* CSS to simplify the col- selector */
+/* CSS to clear the context of the grid */
 
-/* Select all classes that start with col- */
+/* Styling for the empty row */
+.row::after {
+    /* No content */
+    content: "";
+    /* Displayed as a table */
+    display: table;
+    /* Clear floating elements */
+    clear: both;
+}
+
+/* Simplify the col- selector */
 [class^="col-"] {
-    /* Float them to the left */
     float: left;
-    /* Set their padding to half of the root element */
     padding: calc(0.5 * var(--root-font-size));
 }
 
-/* Remove references to common properties for individual col-1-3 and col-1-2 classes */
-.col-1-3, .col-1-2 {
-    /* Remove these properties */
-    float: none;
-    padding: 0;
+/* For the col-1-3 class */
+.col-1-3 {
+    width: 33.33%; /* Set the width to 33.33% of its parent */
 }
+
+/* For the col-1-2 class */
+.col-1-2 {
+    width: 50%; /* Set the width to 50% of the parent */
+}
+
