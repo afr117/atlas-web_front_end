@@ -1,57 +1,97 @@
-/* CSS for grid styling and custom variables */
+/* CSS for customizing the navbar */
 
 /* Define custom properties */
 :root {
+    --root-font-size: 1rem; /* Define root font size */
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 4%;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 calc(3 * var(--root-font-size)) 0;
+    --nav-item-link-hover: var(--color-primary);
     --section-tagline-margin: 0;
 }
 
-/* Styling for section-tagline class */
-.section-tagline {
-    /* Set margins */
-    margin: var(--section-tagline-margin);
+/* Targeting the navbar-menu class */
+.navbar-menu {
+    /* Let it float to the right */
+    float: right;
 }
 
-/* Styling for ul elements with class row */
-ul.row {
-    /* Set margins and padding */
+/* Targeting the nav class */
+.nav {
+    /* Set margin and padding to 0 */
     margin: 0;
     padding: 0;
-    /* Remove default list styles */
+    /* Center align the text */
+    text-align: center;
+    /* Remove list style */
     list-style: none;
 }
 
-/* Styling for col-1-3 class */
+/* Targeting the nav-item class in nav class */
+.nav .nav-item {
+    /* Set font family, font weight, font size, letter spacing, display, and margin */
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+/* Targeting the nav-link class within nav class */
+.nav .nav-link {
+    /* Set display to block */
+    display: block;
+    /* Set padding */
+    padding: calc(0.5 * var(--root-font-size)) var(--root-font-size);
+}
+
+/* Hover effect for nav-link class within nav class */
+.nav .nav-link:hover {
+    /* Set foreground color value */
+    color: var(--nav-item-link-hover);
+}
+
+/* Grid styling and custom variables */
+
+/* Set the margins for the section-tagline class */
+.section-tagline {
+    margin: var(--section-tagline-margin);
+}
+
+/* For all ul with the class row */
+ul.row {
+    margin: 0; /* 0 margins all around */
+    padding: 0; /* No padding all around */
+    list-style: none; /* The list should not have any default styles at all */
+}
+
+/* For the col-1-3 class */
 .col-1-3 {
-    /* Set width to 33.33% */
-    width: 33.33%;
-    /* Float left */
-    float: left;
-    /* Set padding to half of the root element */
-    padding: calc(0.5 * var(--root-font-size));
+    width: 33.33%; /* Set the width to 33.33% of its parent */
+    float: left; /* Float it to the left */
+    padding: calc(0.5 * var(--root-font-size)); /* Set its padding to half of the root element */
 }
 
-/* Styling for col-1-2 class */
+/* For the col-1-2 class */
 .col-1-2 {
-    /* Set width to 50% */
-    width: 50%;
-    /* Float left */
-    float: left;
-    /* Set padding to half of the root element */
-    padding: calc(0.5 * var(--root-font-size));
+    width: 50%; /* Set the width to 50% of the parent */
+    float: left; /* Float it to the left */
+    padding: calc(0.5 * var(--root-font-size)); /* Set its padding to half of the root element */
 }
 
-/* Styling for footer-copyright class */
+/* For the footer-copyright class */
 .footer-copyright {
-    /* Remove margins */
-    margin: 0;
-    /* Set font size */
-    font-size: var(--font-size-small);
-    /* Set foreground color */
-    color: var(--text-color);
+    margin: 0; /* No margins */
+    font-size: var(--font-size-small); /* Set the size of the fonts to font-size-small */
+    color: var(--text-color); /* Set the foreground color to text-color */
 }
 
-/* Styling for ul elements within the footer class */
+/* For all ul tag in the footer class */
 .footer ul {
-    /* Align text to the right */
-    text-align: right;
+    text-align: right; /* Align the text to the right */
 }
+
