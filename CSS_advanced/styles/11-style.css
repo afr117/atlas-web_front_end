@@ -1,11 +1,20 @@
-/* CSS for additional styles to the section tagline */
+/* CSS for centering section titles */
 
-/* Target the section-tagline class */
-.section-tagline {
-    /* Set font family to font-family-title */
-    font-family: var(--font-family-title);
-    /* Transform text to uppercase */
-    text-transform: uppercase;
-    /* Set font weight to font-weight-bold */
-    font-weight: bold;
+/* Create a new custom property for section header alignment */
+:root {
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
 }
+
+/* Target the class .section-header and set horizontal alignment */
+.section-header {
+    text-align: var(--section-header-align);
+}
+
+/* Target the class .section-tagline */
+.section-tagline {
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+}
+
