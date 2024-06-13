@@ -1,32 +1,75 @@
-/* CSS for styling and custom properties for the nav */
+/* CSS for customizing the navbar */
 
-/* Edit the nav-item-link-hover property */
+/* Define custom properties */
 :root {
-    --nav-item-link-hover: var(--color-white);
+    --root-font-size: 1rem; /* Define root font size */
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 4%;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 calc(3 * var(--root-font-size)) 0;
+    --nav-item-link-hover: var(--color-white); /* Edit the nav-item-link-hover property */
+    --color-primary: #d73953; /* Example value for color-primary */
+    --color-white: #ffffff; /* Example value for color-white */
 }
 
-/* Target before pseudo elements of nav-link inside nav */
-.nav nav-link::before {
-    /* Empty content */
-    content: '';
-    /* Absolute positioning */
+/* Targeting the navbar-menu class */
+.navbar-menu {
+    /* Let it float to the right */
+    float: right;
+}
+
+/* Targeting the nav class */
+.nav {
+    /* Set margin and padding to 0 */
+    margin: 0;
+    padding: 0;
+    /* Center align the text */
+    text-align: center;
+    /* Remove list style */
+    list-style: none;
+}
+
+/* Targeting the nav-item class in nav class */
+.nav .nav-item {
+    /* Set font family, font weight, font size, letter spacing, display, and margin */
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+/* Targeting the nav-link class within nav class */
+.nav .nav-link {
+    /* Set display to block */
+    display: block;
+    /* Set padding */
+    padding: calc(0.5 * var(--root-font-size)) var(--root-font-size);
+}
+
+/* Hover effect for nav-link class within nav class */
+.nav .nav-link:hover {
+    /* Set foreground color value */
+    color: var(--nav-item-link-hover);
+}
+
+/* Target the before pseudo elements of nav-link that is inside the nav */
+.nav .nav-link::before {
+    content: "";
     position: absolute;
-    /* Set vertical position */
     top: 0;
-    /* Set horizontal position */
     left: 0;
-    /* Background color */
     background-color: var(--color-white);
-    /* Width */
     width: 0;
-    /* Height */
-    height: 20%;
+    height: calc(0.2 * var(--root-font-size)); /* Set height to 20% of the root element value */
 }
 
-/* Target before pseudo elements of nav-link when nav-item is hovered */
-.nav nav-item:hover::before {
-    /* Background color */
+/* Target the before pseudo elements of nav-link when nav-item is hover and is inside nav */
+.nav .nav-item:hover .nav-link::before {
     background-color: var(--color-primary);
-    /* Width */
     width: 100%;
 }
+
