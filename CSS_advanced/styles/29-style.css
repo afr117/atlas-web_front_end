@@ -64,7 +64,7 @@
     left: 0;
     background-color: var(--color-white);
     width: 0;
-    height: calc(0.2 * var(--root-font-size)); /* Set height to 20% of the root element value */
+    height: 0.2rem; /* Set height to 0.2rem */
 }
 
 /* Target the before pseudo elements of nav-link when nav-item is hover and is inside nav */
