@@ -1,34 +1,103 @@
-/* CSS for incorporating transitions */
+/* CSS for customizing the navbar and transitions */
 
-/* Custom properties */
+/* Define custom properties */
 :root {
+    --root-font-size: 1rem; /* Define root font size */
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 4%;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 calc(3 * var(--root-font-size)) 0;
+    --nav-item-link-hover: var(--color-white); /* Edit the nav-item-link-hover property */
+    --color-primary: #d73953; /* Example value for color-primary */
+    --color-white: #ffffff; /* Example value for color-white */
     --transition-duration: .3s;
     --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
-/* Transformations on card work */
+/* Targeting the navbar-menu class */
+.navbar-menu {
+    /* Let it float to the right */
+    float: right;
+}
+
+/* Targeting the nav class */
+.nav {
+    /* Set margin and padding to 0 */
+    margin: 0;
+    padding: 0;
+    /* Center align the text */
+    text-align: center;
+    /* Remove list style */
+    list-style: none;
+}
+
+/* Targeting the nav-item class in nav class */
+.nav .nav-item {
+    /* Set font family, font weight, font size, letter spacing, display, and margin */
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+/* Targeting the nav-link class within nav class */
+.nav .nav-link {
+    /* Set display to block */
+    display: block;
+    /* Set padding */
+    padding: calc(0.5 * var(--root-font-size)) var(--root-font-size);
+    /* Use the shorthand property transition */
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Hover effect for nav-link class within nav class */
+.nav .nav-link:hover {
+    /* Set foreground color value */
+    color: var(--nav-item-link-hover);
+}
+
+/* Target the before pseudo elements of nav-link that is inside the nav */
+.nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: 0.2rem; /* Set height to 0.2rem */
+    /* Use the shorthand property transition */
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Target the before pseudo elements of nav-link when nav-item is hover and is inside nav */
+.nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary);
+    width: 100%;
+}
+
+/* Add transformations on the card work */
 .card-work:hover .card-image {
-    transform: scale(1.2);
-    transition: transform var(--transition-duration) var(--transition-cubic-bezier);
+    transform: scale(1.2); /* Apply a scale transform */
+    /* Use the shorthand property transition */
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
-    transform: scale(0.95);
-    transition: transform var(--transition-duration) var(--transition-cubic-bezier);
+    transform: scale(0.95); /* Apply a scale transform to make the elements shrink */
 }
 
-/* Animations on navigation items */
-.nav .nav-link::before {
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
-}
-
-/* Animation on button background */
-.button:hover {
-    transition: background-color var(--transition-duration) var(--transition-cubic-bezier),
-                color var(--transition-duration) var(--transition-cubic-bezier);
-}
-
-/* Transitions on card works */
 .card-work .card-inner {
+    /* Use the shorthand property transition */
     transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
+
+/* Animate the button background */
+.button:hover {
+    transition-duration: var(--transition-duration); /* Set the duration of the transition */
+    transition-property: color, background-color; /* Apply the transition effect to color and background-color properties */
+}
+
