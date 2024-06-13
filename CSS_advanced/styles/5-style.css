@@ -22,6 +22,17 @@ html {
     font-size: 62.5%;
 }
 
+/* Set body font-family and font-size */
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+}
+
+/* Set font-family for all heading tags */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
+
 /* Revisit section-tagline and card-category declarations */
 .section-tagline,
 .card-category {
@@ -32,16 +43,5 @@ html {
 body,
 a {
     color: var(--text-color); /* Reset color to text-color */
-}
-
-/* Set body font-family and font-size */
-body {
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-medium);
-}
-
-/* Set font-family for all heading tags */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
 }
 
