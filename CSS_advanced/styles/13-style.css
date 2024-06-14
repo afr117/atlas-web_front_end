@@ -10,3 +10,8 @@
     background: var(--color-black);
 }
 
+/* Apply text color */
+[data-section-theme="dark"] {
+    color: var(--text-color);
+}
+
