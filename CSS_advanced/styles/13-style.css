@@ -1,45 +1,12 @@
-/* CSS for additional styling to the section title */
+/* Dark theme for sections */
+[data-section-theme="dark"] {
+    /* Redefine the custom property text-color to color-white */
+    --text-color: var(--color-white);
 
-/* Define custom properties */
-:root {
-    --section-title-margin: 0;
-    --section-title-color: var(--color-black);
-}
+    /* Redefine the custom property section-title-color to color-white */
+    --section-title-color: var(--color-white);
 
-/* Target the section-title class */
-.section-title {
-    /* Set font family to font-family-title */
-    font-family: var(--font-family-title);
-    /* Set font size to font-size-xx-large */
-    font-size: var(--font-size-xx-large);
-    /* Set font weight to font-weight-bold */
-    font-weight: var(--font-weight-bold);
-    /* Use section-title-margin to set the margin */
-    margin: var(--section-title-margin);
-    /* Use section-title-color to set the text color */
-    color: var(--section-title-color);
-}
-
-/* Ensure that the declaration targeting anchor elements only targets those containing a hyperlink */
-a[href] {
-    text-decoration: none;
-}
-
-/* Directly after this declaration, target the visited state for the link */
-a[href]:visited {
-    /* Italicize the text */
-    font-style: italic;
-}
-
-/* Directly after the visited state, target the hover state for the link */
-a[href]:hover {
-    /* Decorate the links with an underline when hovering */
-    text-decoration: underline;
-}
-
-/* Directly after the hover state, target the active state for the link */
-a[href]:active {
-    /* Set the color of the background with the variable color-light-grey */
-    background-color: var(--color-light-grey);
+    /* Set the background to the variable color-black */
+    background: var(--color-black);
 }
 
