@@ -4,26 +4,6 @@
 :root {
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
-    --color-primary: #d73953;
-    --color-black: #090909;
-    --color-white: #ffffff;
-    --color-light-grey: #f3f3f3;
-    --color-dark-grey: #353535;
-    --text-color: var(--color-black); /* Set text-color to color-black */
-    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;
-    --font-size-large: 1.8rem;
-    --font-size-x-large: 2.3rem;
-    --font-size-xx-large: 4.8rem;
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
-    --line-height-small: 1.2;
-    --line-height-base: 1.5;
-    --line-height-big: 1.8;
-    --section-header-align: center;
-    --section-tagline-transform: uppercase;
 }
 
 /* Target the section-title class */
@@ -45,18 +25,21 @@ a[href] {
     text-decoration: none;
 }
 
-/* Target the visited state for the link */
+/* Directly after this declaration, target the visited state for the link */
 a[href]:visited {
+    /* Italicize the text */
     font-style: italic;
 }
 
-/* Target the hover state for the link */
+/* Directly after the visited state, target the hover state for the link */
 a[href]:hover {
+    /* Decorate the links with an underline when hovering */
     text-decoration: underline;
 }
 
-/* Target the active state for the link */
+/* Directly after the hover state, target the active state for the link */
 a[href]:active {
+    /* Set the color of the background with the variable color-light-grey */
     background-color: var(--color-light-grey);
 }
 
